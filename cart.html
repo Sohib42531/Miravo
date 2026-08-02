@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Miravo | Shopping Cart</title>
+
+<link rel="stylesheet" href="cart.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<a href="index.html" class="logo">
+
+<img src="C351539A-E62F-450D-A51A-E97DADDFA771.png" alt="Miravo Logo">
+
+</a>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="product.html">Product</a>
+
+<a href="checkout.html">Checkout</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<section class="cart">
+
+<div class="container">
+
+<h1>Shopping Cart</h1>
+
+<div class="cart-item">
+
+<div class="product-image">
+
+<img src="81D938F6-0E0A-4851-AB34-394E3698171C.png">
+
+</div>
+
+<div class="product-info">
+
+<h2>Miravo Premium Multani Mitti Powder</h2>
+
+<p>
+
+100% Natural | Face & Hair Care
+
+</p>
+
+<h3>₹149</h3>
+
+</div><div class="quantity-box">
+
+<h4>Quantity</h4>
+
+<div class="quantity">
+
+<button onclick="minus()">-</button>
+
+<input type="text" id="qty" value="1" readonly>
+
+<button onclick="plus()">+</button>
+
+</div>
+
+</div>
+
+<div class="remove-box">
+
+<a href="#" class="remove-btn">
+
+🗑 Remove
+
+</a>
+
+</div>
+
+</div>
+
+<!-- CART SUMMARY -->
+
+<div class="cart-summary">
+
+<h2>Order Summary</h2>
+
+<div class="summary-row">
+
+<span>Subtotal</span>
+
+<span>₹149</span>
+
+</div>
+
+<div class="summary-row">
+
+<span>Shipping</span>
+
+<span>FREE</span>
+
+</div>
+
+<div class="summary-row">
+
+<span>Discount</span>
+
+<span>₹0</span>
+
+</div>
+
+<hr>
+
+<div class="summary-total">
+
+<span>Total</span>
+
+<span>₹149</span>
+
+</div>
+
+<div class="summary-buttons">
+
+<a href="product.html" class="continue-btn">
+
+← Continue Shopping
+
+</a>
+
+<a href="checkout.html" class="checkout-btn">
+
+Proceed to Checkout →
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section><!-- FOOTER -->
+
+<footer>
+
+<div class="container footer-container">
+
+<div class="footer-logo">
+
+<img src="C351539A-E62F-450D-A51A-E97DADDFA771.png" alt="Miravo Logo">
+
+<h3>Miravo Wellness</h3>
+
+<p>Pure by Nature</p>
+
+</div>
+
+<div class="footer-contact">
+
+<h3>Customer Support</h3>
+
+<p>📞 +91 8569070242</p>
+
+<p>📧 miravowellness@gmail.com</p>
+
+<p>📍 Gobinda Nagar,<br>Rupnagar - 140001</p>
+
+</div>
+
+<div class="footer-links">
+
+<h3>Quick Links</h3>
+
+<a href="index.html">Home</a>
+
+<a href="product.html">Product</a>
+
+<a href="checkout.html">Checkout</a>
+
+</div>
+
+</div>
+
+<div class="copyright">
+
+© 2026 MIRAVO. All Rights Reserved.
+
+</div>
+
+</footer>
+
+<script>
+
+let qty = 1;
+
+function plus(){
+
+qty++;
+
+document.getElementById("qty").value = qty;
+
+}
+
+function minus(){
+
+if(qty > 1){
+
+qty--;
+
+document.getElementById("qty").value = qty;
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
