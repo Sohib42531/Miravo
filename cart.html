@@ -211,27 +211,60 @@ Proceed to Checkout →
 
 <script>
 
+const priceTable = {
+1:149,
+2:299,
+3:449,
+4:599,
+5:745,
+6:895,
+7:1099,
+8:1199,
+9:1339,
+10:1499
+};
+
 let qty = 1;
+
+function updateTotal(){
+
+document.getElementById("qty").value = qty;
+
+document.getElementById("subtotal").innerHTML = "₹" + priceTable[qty];
+
+document.getElementById("total").innerHTML = "₹" + priceTable[qty];
+
+}
 
 function plus(){
 
+if(qty<10){
+
 qty++;
 
-document.getElementById("qty").value = qty;
+updateTotal();
+
+}else{
+
+alert("Maximum quantity is 10");
+
+}
 
 }
 
 function minus(){
 
-if(qty > 1){
+if(qty>1){
 
 qty--;
 
-document.getElementById("qty").value = qty;
+updateTotal();
 
 }
 
 }
+
+updateTotal();
 
 </script>
 
