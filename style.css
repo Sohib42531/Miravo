@@ -1,0 +1,542 @@
+/* ===========================
+   MIRAVO PREMIUM THEME
+=========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#FFF9F5;
+color:#333;
+overflow-x:hidden;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+/* HEADER */
+
+header{
+position:sticky;
+top:0;
+z-index:999;
+background:#fff;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+header .container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 0;
+}
+
+.logo img{
+height:70px;
+}
+
+nav{
+display:flex;
+gap:35px;
+}
+
+nav a{
+text-decoration:none;
+font-weight:600;
+color:#6D4C63;
+transition:.3s;
+}
+
+nav a:hover{
+color:#C9A35A;
+}
+
+.nav-btn{
+padding:12px 28px;
+background:#6D4C63;
+color:#fff;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+transition:.3s;
+}
+
+.nav-btn:hover{
+background:#4D3148;
+}
+
+/* HERO */
+
+.hero{
+padding:80px 0;
+background:linear-gradient(135deg,#FFF9F5,#F7EFE9);
+}
+
+.hero-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:60px;
+}
+
+.hero-left{
+flex:1;
+}
+
+.hero-left h4{
+color:#C9A35A;
+letter-spacing:2px;
+margin-bottom:15px;
+}
+
+.hero-left h1{
+font-size:62px;
+line-height:1.1;
+color:#4D3148;
+margin-bottom:20px;
+}
+
+.hero-left p{
+font-size:18px;
+line-height:1.8;
+color:#666;
+margin-bottom:35px;
+max-width:500px;
+}
+
+.hero-buttons{
+display:flex;
+gap:20px;
+}
+
+.btn{
+display:inline-block;
+padding:16px 34px;
+background:#6D4C63;
+color:#fff;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+background:#4D3148;
+transform:translateY(-4px);
+}
+
+.btn2{
+display:inline-block;
+padding:16px 34px;
+border:2px solid #6D4C63;
+color:#6D4C63;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn2:hover{
+background:#6D4C63;
+color:#fff;
+}
+
+.hero-right{
+flex:1;
+text-align:center;
+}
+
+.hero-right img{
+width:100%;
+max-width:520px;
+filter:drop-shadow(0 20px 35px rgba(0,0,0,.15));
+}/* ===========================
+   PRODUCTS
+=========================== */
+
+.products{
+padding:100px 0;
+background:#ffffff;
+}
+
+.products h2{
+text-align:center;
+font-size:42px;
+color:#4D3148;
+margin-bottom:50px;
+}
+
+.product-card{
+max-width:380px;
+margin:auto;
+background:#FFFDFC;
+padding:35px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+transition:.35s;
+}
+
+.product-card:hover{
+transform:translateY(-10px);
+}
+
+.product-card img{
+width:100%;
+max-width:260px;
+margin-bottom:20px;
+}
+
+.product-card h3{
+font-size:28px;
+color:#4D3148;
+margin-bottom:10px;
+}
+
+.product-card p{
+color:#666;
+line-height:1.7;
+margin-bottom:20px;
+}
+
+.product-card h4{
+font-size:38px;
+color:#6D4C63;
+margin-bottom:25px;
+}
+
+.buy{
+display:inline-block;
+padding:15px 36px;
+background:#6D4C63;
+color:#fff;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+transition:.3s;
+}
+
+.buy:hover{
+background:#4D3148;
+}
+
+/* ===========================
+   BENEFITS
+=========================== */
+
+.benefits{
+padding:100px 0;
+background:#FFF9F5;
+}
+
+.benefits h2{
+text-align:center;
+font-size:42px;
+color:#4D3148;
+margin-bottom:50px;
+}
+
+.benefit-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+}
+
+.benefit-card{
+background:#fff;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.benefit-card:hover{
+transform:translateY(-8px);
+}
+
+.benefit-card h3{
+color:#6D4C63;
+margin-bottom:15px;
+font-size:24px;
+}
+
+.benefit-card p{
+color:#666;
+line-height:1.8;
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+.about{
+padding:100px 0;
+background:#F7EFE9;
+}
+
+.about-container{
+display:flex;
+align-items:center;
+gap:60px;
+}
+
+.about-image,
+.about-content{
+flex:1;
+}
+
+.about-image img{
+width:100%;
+max-width:420px;
+display:block;
+margin:auto;
+}
+
+.about-content h2{
+font-size:42px;
+color:#4D3148;
+margin-bottom:20px;
+}
+
+.about-content p{
+line-height:1.9;
+color:#555;
+margin-bottom:30px;
+}
+
+/* ===========================
+   REVIEWS
+=========================== */
+
+.reviews{
+padding:100px 0;
+background:#ffffff;
+}
+
+.reviews h2{
+text-align:center;
+font-size:42px;
+color:#4D3148;
+margin-bottom:50px;
+}
+
+.review-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.review-card{
+background:#FFF9F5;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.review-card:hover{
+transform:translateY(-8px);
+}
+
+.review-card p{
+margin:15px 0;
+line-height:1.8;
+color:#666;
+}/* ===========================
+   CONTACT
+=========================== */
+
+.contact{
+padding:100px 0;
+background:#F7EFE9;
+}
+
+.contact h2{
+text-align:center;
+font-size:42px;
+color:#4D3148;
+margin-bottom:40px;
+}
+
+.contact-box{
+max-width:700px;
+margin:auto;
+background:#fff;
+padding:40px;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.contact-box p{
+font-size:18px;
+line-height:2;
+color:#555;
+margin-bottom:20px;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+background:#4D3148;
+color:#fff;
+padding:70px 0 25px;
+}
+
+.footer-container{
+display:grid;
+grid-template-columns:2fr 1fr 1fr;
+gap:40px;
+}
+
+.footer-logo img{
+height:70px;
+margin-bottom:15px;
+}
+
+.footer-logo h3{
+font-size:28px;
+margin-bottom:8px;
+}
+
+.footer-logo p{
+color:#ddd;
+}
+
+.footer-links h3,
+.footer-contact h3{
+margin-bottom:18px;
+}
+
+.footer-links a{
+display:block;
+text-decoration:none;
+color:#ddd;
+margin:10px 0;
+transition:.3s;
+}
+
+.footer-links a:hover{
+color:#C9A35A;
+}
+
+.footer-contact p{
+margin:10px 0;
+color:#ddd;
+line-height:1.8;
+}
+
+.copyright{
+text-align:center;
+margin-top:40px;
+padding-top:20px;
+border-top:1px solid rgba(255,255,255,.15);
+font-size:15px;
+color:#ddd;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+header .container,
+.hero-container,
+.about-container{
+flex-direction:column;
+text-align:center;
+}
+
+nav{
+flex-wrap:wrap;
+justify-content:center;
+gap:18px;
+margin:20px 0;
+}
+
+.hero-left h1{
+font-size:46px;
+}
+
+.hero-buttons{
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.products,
+.benefits,
+.about,
+.reviews,
+.contact{
+padding:70px 0;
+}
+
+.benefit-grid,
+.review-grid,
+.footer-container{
+grid-template-columns:1fr;
+}
+
+.hero-right img{
+max-width:340px;
+}
+
+.about-image img{
+max-width:300px;
+}
+
+.product-card{
+max-width:100%;
+}
+
+.logo img{
+height:55px;
+}
+
+.nav-btn{
+margin-top:10px;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero-left h1{
+font-size:36px;
+}
+
+.hero-left p{
+font-size:16px;
+}
+
+.products h2,
+.benefits h2,
+.about-content h2,
+.reviews h2,
+.contact h2{
+font-size:32px;
+}
+
+.btn,
+.btn2,
+.buy{
+width:100%;
+text-align:center;
+}
+
+.contact-box{
+padding:25px;
+}
+
+}
