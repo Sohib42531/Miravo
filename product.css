@@ -479,3 +479,34 @@ justify-content:center;
 }
 
 }
+/* Animation */
+
+section{
+
+opacity:0;
+
+transform:translateY(40px);
+
+transition:.8s;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+.main-image{
+
+transition:.35s;
+
+}
+
+.thumbs img.active{
+
+border:2px solid #6D4C63;
+
+}
