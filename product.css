@@ -39,9 +39,8 @@ padding:18px 0;
 }
 
 .logo img{
-    width: 220px;
+    width: clamp(180px, 28vw, 280px);
     height: auto;
-    display: block;
 }
 
 nav{
