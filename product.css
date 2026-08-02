@@ -39,7 +39,9 @@ padding:18px 0;
 }
 
 .logo img{
-height:65px;
+    width: 220px;
+    height: auto;
+    display: block;
 }
 
 nav{
