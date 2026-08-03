@@ -39,11 +39,12 @@ align-items:center;
 padding:18px 0;
 }
 
-.logo img{
-    width: 260px;
+.logo-img{
+    width: 280px;
     height: auto;
     display: block;
     margin: 0 auto;
+}
 }
 
 nav{
