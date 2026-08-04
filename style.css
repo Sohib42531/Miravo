@@ -25,9 +25,7 @@ margin:auto;
 /* HEADER */
 
 header{
-position:sticky;
-top:0;
-z-index:999;
+position:static;
 background:#fff;
 box-shadow:0 8px 25px rgba(0,0,0,.08);
 }
